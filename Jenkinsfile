@@ -18,12 +18,12 @@ node {
          }
       }
    }
-   stage('Results') {
-      junit '**/target/surefire-reports/TEST-*.xml'
-      archiveArtifacts 'target/*.jar'
-   }
-   stage('Post') {
+   //stage('Results') {
+   //   junit '**/target/surefire-reports/TEST-*.xml'
+     // archiveArtifacts 'target/*.jar'
+   }///
+  // stage('Post') {
       //gsutil cp 'target/*.jar' 'gs://jenkins--bucket'
-    googleStorageUpload bucket: 'gs://expbuck', credentialsId: 'project-01', pattern: 'target/*.jar'
-   }   
+   // googleStorageUpload bucket: 'gs://expbuck', credentialsId: 'project-01', pattern: 'target/*.jar'
+  // }   
 }
