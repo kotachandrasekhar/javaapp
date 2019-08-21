@@ -20,7 +20,7 @@ public class App {
 
 			/**** Connect to MongoDB ****/
 			// Since 2.10.0, uses MongoClient
-			MongoClient mongo = new MongoClient("34.68.193.243", 27017);
+			MongoClient mongo = new MongoClient("34.68.58.50", 27017);
 
 			/**** Get database ****/
 			// if database doesn't exists, MongoDB will create it for you
